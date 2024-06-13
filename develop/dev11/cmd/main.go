@@ -1,13 +1,17 @@
 package main
 
-//"log"
-//"sync"
+// import (
+// 	// "log"
+// 	// "sync"
 
-//"github.com/Qwertozavr/wb_l2/repos"
-//"github.com/Qwertozavr/wb_l2/cmd"
+// 	// "github.com/Qwertozavr/wb_l2/develop/dev11/repos"
+// 	// "github.com/Qwertozavr/wb_l2/develop/dev11/cmd"
+// )
 
 func main() {
-	//repo := repos.NewStore(&sync.Mutex{}, make(map[int]repos.Event))
+	// repo := repos.NewStore(&sync.Mutex{}, make(map[int]repos.Event))
 
-	//srv := server.New()
+	// srv := server.New()
+
+	// log.Fatal(srv.Run("8080", mw))
 }
