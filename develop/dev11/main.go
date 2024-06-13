@@ -1,11 +1,11 @@
 package main
 
 // import (
-// 	// "log"
-// 	// "sync"
+// 	"log"
+// 	"sync"
 
-// 	// "github.com/Qwertozavr/wb_l2/develop/dev11/repos"
-// 	// "github.com/Qwertozavr/wb_l2/develop/dev11/cmd"
+// 	"github.com/Qwertozavr/wb_l2/develop/dev11/repos"
+// 	"github.com/Qwertozavr/wb_l2/develop/dev11"
 // )
 
 func main() {
