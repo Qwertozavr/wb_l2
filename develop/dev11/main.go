@@ -1,17 +1,23 @@
 package main
 
-// import (
-// 	"log"
-// 	"sync"
+import (
+	"log"
+	"sync"
 
-// 	"github.com/Qwertozavr/wb_l2/develop/dev11/repos"
-// 	"github.com/Qwertozavr/wb_l2/develop/dev11"
-// )
+	"dev11/handler"
+	"dev11/middleware"
+	"dev11/repos"
+	"dev11/server"
+)
 
 func main() {
-	// repo := repos.NewStore(&sync.Mutex{}, make(map[int]repos.Event))
+	repo := repos.NewStore(&sync.Mutex{}, make(map[int]repos.Event))
 
-	// srv := server.New()
+	srv := server.New()
 
-	// log.Fatal(srv.Run("8080", mw))
+	handl := handler.New(repo).InitRoutes()
+
+	mw := middleware.RequestLogging(handl)
+
+	log.Fatal(srv.Run("8080", mw))
 }
